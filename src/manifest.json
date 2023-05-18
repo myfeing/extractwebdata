@@ -1,0 +1,38 @@
+{
+    "name": "Extract 51job Eneterprise Corporation name",
+    "description": "Build an Extension!",
+    "version": "1.0",
+    "manifest_version": 3, 
+    "background": {
+      "service_worker": "serviceworker.js",
+      "type": "module"
+    },
+    "minimum_chrome_version": "92",
+    "permissions": ["storage", "scripting", "tabs"], 
+    "host_permissions": ["*://*/*"],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["content.js"]
+        }
+      ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/spider16.png",
+            "32": "/images/spider32.png",
+            "48": "/images/spider48.png",
+            "128": "/images/spider128.png"
+      }
+    },
+    "options_page": "options-sav.html",
+    "icons": {
+        "16": "/images/spider16.png",
+        "32": "/images/spider32.png",
+        "48": "/images/spider48.png",
+        "128": "/images/spider128.png"
+    }
+}

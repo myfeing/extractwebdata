@@ -1,0 +1,33 @@
+{
+  "name": "extractwebdata",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/option-page/index.html",
+  "directories": {
+    "test": "test"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "mocha --require babel-register --bail",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/myfeing/extractwebdata.git"
+  },
+  "author": "feiminyu",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "parcel": "^2.7.0",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
